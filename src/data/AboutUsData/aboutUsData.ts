@@ -206,7 +206,7 @@ export const aboutUsData = {
   },
 
   brandAmbassadorSection: {
-    title: "Brand Ambassador",
+    title: "COMING SOON",
     Banner: Helper.Banner,
     mobileBanner: Helper.MobileBanner,
     ambassadorDeatil: {
@@ -214,13 +214,13 @@ export const aboutUsData = {
       ambassadors: [
         {
           id: 1,
-          name: "Sonu Sood",
+          name: "SONU SOOD",
           image: Helper.sonuImage,
           descripation: "ACTOR, PRODUCER & PHILANTHROPIST",
         },
         {
           id: 2,
-          name: "Mary Kom",
+          name: "MARRY KOM",
           image: Helper.MaryImage,
           descripation:
             "2019 LONDON OLYMPIC MEDALIST & 6 TIMES AIBA WOMEN’S WORLD CHAMPION",

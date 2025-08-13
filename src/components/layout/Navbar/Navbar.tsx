@@ -127,7 +127,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="flex items-center relative">
+  <nav className="flex items-center relative font-montserrat">
+
       {/* Desktop Navigation */}
       <div className="hidden lg:flex items-center space-x-1">
         {navLinks.map((link) => (
@@ -147,7 +148,7 @@ const Navbar: React.FC = () => {
               <Link
                 href={link.path}
                 className={`px-3 py-2 font-medium transition-colors hover:text-blue-700 ${
-                  pathname === link.path ? 'text-[#1D3A69]' : 'text-gray-700'
+                  pathname === link.path ? 'text-[#1D3A69]' : 'text-[#1D3A69]'
                 }`}
               >
                 {link.name}
@@ -367,7 +368,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)}
             >
               Register Now
-            </Link>
+            </Link> 
           </div>
         </div>
       </div>

@@ -29,6 +29,9 @@ import FaqsLogo from "../../../public/SVG/FAQs.svg"
 
 //Routes Maps Data
 import routesMap from "../../../public/SVG/routes-map-logo.svg"
+import routemap1 from "../../../public/InformationRaceDay/Roundmap/Routemap1.jpg"
+import routemap2 from "../../../public/InformationRaceDay/Roundmap/Routemap3.jpg"
+import routemap3 from "../../../public/InformationRaceDay/Roundmap/Routemap2.jpg"
 
 //Reach Image Data 
 import ReachLogo from "../../../public/InformationRaceDay/reachedMap/reached-logo.svg"
@@ -38,8 +41,8 @@ import nearByHotelLogo from "../../../public/SVG/near-by-hotel.svg"
 
 //AIIMS Logo
 import aiimsLogo from "../../../public/InformationRaceDay/AimsCerified/aiims-logo.svg"
-import aiimsCertified10k from "../../../public/InformationRaceDay/AimsCerified/SAGCR-10K-AIMS-CERTIFICATE-1536x1187 1.png"
-import aiimsCertified21k from "../../../public/InformationRaceDay/AimsCerified/SAGCR-HM-AIMS-CERTIFICATE-1536x1187 1.png"
+import aiimsCertified10k from "../../../public/InformationRaceDay/AimsCerified/internatioal-measurement-cretificate-ten-km.png"
+import aiimsCertified21k from "../../../public/InformationRaceDay/AimsCerified/internatioal-measurement-cretificate-twenty-one-km.png"
 
 export const Helper ={
  
@@ -71,6 +74,9 @@ export const Helper ={
 
     //Routes Map Data 
     routesMap,
+    routemap1,
+    routemap2,
+    routemap3,
 
     // Reachedd Map Data
     ReachLogo,

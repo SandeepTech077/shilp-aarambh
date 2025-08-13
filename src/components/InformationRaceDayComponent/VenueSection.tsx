@@ -45,10 +45,10 @@ const VenueSection = ({ venue, parkingVenue }: Props) => {
       </section>
 
       {/* Parking Section */}
-      <section className="flex flex-col md:flex-row-reverse gap-6 items-start text-right ">
+      <section className="flex flex-col md:flex-row-reverse gap-4 items-start text-right ">
         {/* Right (content): 30% */}
         <div className="w-full md:w-[30%] space-y-3">
-          <h2 className="text-[26px] lg:text-[40px] font-bold ">{parkingVenue.title}</h2>
+          <h2 className="text-[26px] lg:text-[37px] font-bold ">{parkingVenue.title}</h2>
           <p className="text-[14px] lg:text-[16px]">{parkingVenue.parkingArea}</p>
           <Image
             src={parkingVenue.parkingQr}

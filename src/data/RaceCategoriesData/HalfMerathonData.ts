@@ -1,5 +1,6 @@
 import { Helper } from "@/helper/RaceCategoriesHelper/Helper";
 
+
 export const HalfMerathonData = {
    
     banner: {
@@ -240,18 +241,20 @@ export const HalfMerathonData = {
                 {
                     id:1,
                     iconSvg:Helper.Expo,
-                    profileName:"BIB EXPO"
+                    profileName:"BIB EXPO",
+                    link:"/information/expo"
                 },
                 {
                     id:2,
                     iconSvg:Helper.RaceIcon,
-                    profileName:"RACE DAY INFORMATION"
-
+                    profileName:"RACE DAY INFORMATION",
+                    link:"/information/race-day-information"
                 },
                 {
                     id:3,
                     iconSvg:Helper.Routes,
-                    profileName:"ROUTE MAPS"
+                    profileName:"ROUTE MAPS",
+                    link:"/information/routes-maps"
                 }
             ]
 
@@ -502,18 +505,21 @@ export const VijayDiwasData = {
                 {
                     id:1,
                     iconSvg:Helper.Expo,
-                    profileName:"BIB EXPO"
+                    profileName:"BIB EXPO",
+                  
                 },
                 {
                     id:2,
                     iconSvg:Helper.RaceIcon,
-                    profileName:"RACE DAY INFORMATION"
+                    profileName:"RACE DAY INFORMATION",
+                    
 
                 },
                 {
                     id:3,
                     iconSvg:Helper.Routes,
-                    profileName:"ROUTE MAPS"
+                    profileName:"ROUTE MAPS",
+                    
                 }
             ]
 
@@ -633,16 +639,20 @@ export const FunRunData = {
             id: 1,
             iconSvg: Helper.Expo,
             profileName: "BIB EXPO",
+            link: '/ExpoHeader',
           },
           {
             id: 2,
             iconSvg: Helper.RaceIcon,
             profileName: "RACE DAY INFORMATION",
+            ink: '/RaceDayInformation',
+
           },
           {
             id: 3,
             iconSvg: Helper.Routes,
             profileName: "ROUTE MAPS",
+            link: '/RouteMaps',
           },
         ],
       },

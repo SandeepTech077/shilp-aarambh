@@ -29,7 +29,7 @@ const GroupRegistration: React.FC<GroupRegistrationProps> = ({ data }) => {
       <div className="space-y-6">
         {data.describation.map((item) => (
           <div key={item.id} className="flex items-start group">
-            <span className="font-semibold text-white mr-3 mt-0.5 min-w-6 bg-[#1D3A69] rounded-full h-6 w-6 flex items-center justify-center text-sm flex-shrink-0">
+            <span className="font-semibold  mr-3 mt-0.5 text-sm">
               {item.id}
             </span>
             <div className="flex-1">

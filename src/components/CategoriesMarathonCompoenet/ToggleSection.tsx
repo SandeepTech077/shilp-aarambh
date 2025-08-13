@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link"; 
 
 interface Toggle {
   id: string;
@@ -131,6 +132,7 @@ interface IconDetail {
   id: number;
   iconSvg: StaticImageData;
   profileName: string;
+  link:string;
 }
 
 interface RunnerInformation {
@@ -474,7 +476,7 @@ const ToggleSection: React.FC<ToggleSectionProps> = ({
           {content.profiles.map((profile: PacerProfile) => (
             <div
               key={profile.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 p-5 "
+              className="bg-white shadow-lg overflow-hidden border border-gray-200 p-5 "
             >
               {/* Image container with aspect ratio to maintain square */}
               <div className="w-full relative">
@@ -519,11 +521,10 @@ const ToggleSection: React.FC<ToggleSectionProps> = ({
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {content.runnerInformation.iconsDetails.map((item: IconDetail) => (
-          <div
-            key={item.id}
-            className="bg-white rounded-lg shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition-shadow cursor-pointer"
-          >
+           <Link key={item.id} href={item.link}>
+          <div className="bg-white shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition-shadow cursor-pointer">
             <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-gray-100">
+          
               <Image
                 src={item.iconSvg}
                 alt={item.profileName}
@@ -534,6 +535,7 @@ const ToggleSection: React.FC<ToggleSectionProps> = ({
             </div>
             <h3 className="font-semibold ">{item.profileName}</h3>
           </div>
+          </Link>
         ))}
       </div>
     </div>
@@ -565,7 +567,7 @@ const ToggleSection: React.FC<ToggleSectionProps> = ({
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Sidebar - Toggle Navigation */}
         <div className="lg:w-1/4">
-          <div className="bg-white rounded-lg shadow-lg border border-gray-200 sticky top-8">
+          <div className="bg-white  shadow-lg border border-gray-200 sticky top-8">
             <div className="p-4 border-b border-gray-200">
             </div>
             <nav className="p-2">
@@ -576,7 +578,7 @@ const ToggleSection: React.FC<ToggleSectionProps> = ({
                   className={`w-full text-left px-4 py-3 rounded-lg mb-2 transition-all duration-200 font-medium cursor-pointer ${
                     activeToggle === toggle.id
                       ? "bg-[#1D3A69] text-white shadow-md"
-                      : "text-gray-700 hover:bg-gray-100"
+                      : "text-gray-700 hover:bg-gray-100" 
                   }`}
                 >
                   <div className="flex items-center justify-between">

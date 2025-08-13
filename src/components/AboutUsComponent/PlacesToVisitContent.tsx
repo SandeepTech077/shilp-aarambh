@@ -45,7 +45,7 @@ const PlacesToVisitContent: React.FC<PlacesToVisitContentProps> = ({ data }) => 
         {visitingPlace.map((place) => (
           <div 
             key={place.id} 
-            className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
+            className="group bg-white rounded-xl transition-all duration-300 overflow-hidden border border-gray-100"
           >
             {/* Image Container */}
             <div className="relative w-full h-64 md:h-72 lg:h-100 overflow-hidden">

@@ -22,7 +22,7 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({ logoTitle, title }) => {
 
             {/* Title Section */}
             <div className="mb-12">
-                <h1 className="text-[30px] lg:text-[40px] font-bold mb-8 leading-tight ">
+                <h1 className="text-[30px] lg:text-[40px] font-bold mb-8 leading-tight">
                     {title}
                 </h1>
             </div>

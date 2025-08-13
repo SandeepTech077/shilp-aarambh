@@ -29,9 +29,6 @@ export default function RunnerInfo({ leftSection, rightSection }: RunnerInfoProp
           className="w-full lg:w-[60%] h-auto"
         />
         <p className=" text-base">{rightSection.describation}</p>
-        <button className="bg-[#1D3A69] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition hidden md:block">
-          {rightSection.btnText}
-        </button>
       </div>
 
       {/* Right Section */}

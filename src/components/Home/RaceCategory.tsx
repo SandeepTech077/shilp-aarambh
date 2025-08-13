@@ -58,10 +58,10 @@ const RaceCategory: React.FC<RaceCategoryProps> = ({ data }) => {
 
             {/* Text on Background */}
             <div className="absolute top-4 sm:top-6 right-4 sm:right-6 lg:right-10 z-20">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-red-600 drop-shadow-lg">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-red-600">
                 RACE
               </h2>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white ">
                 CATEGORY
               </h2>
             </div>
@@ -75,7 +75,7 @@ const RaceCategory: React.FC<RaceCategoryProps> = ({ data }) => {
             {data.profiles.map((profile: RaceCategoryProfile) => (
               <div
                 key={profile.id}
-                className="min-w-[250px] bg-red-600 bg-opacity-95 backdrop-blur-sm p-4 rounded-lg text-white shadow-2xl transform hover:scale-105 transition-all duration-300 hover:bg-opacity-100 cursor-pointer flex-shrink-0"
+                className="min-w-[250px] bg-red-600 bg-opacity-95 backdrop-blur-sm p-4 rounded-lg text-white transform hover:scale-105 transition-all duration-300 hover:bg-opacity-100 cursor-pointer flex-shrink-0"
               >
                 {/* Profile Image */}
                 <div className="relative w-full h-28 mb-4 overflow-hidden rounded-lg">
@@ -120,7 +120,7 @@ const RaceCategory: React.FC<RaceCategoryProps> = ({ data }) => {
             {data.profiles.map((profile: RaceCategoryProfile) => (
               <div
                 key={profile.id}
-                className="bg-red-600 bg-opacity-95 backdrop-blur-sm p-6 rounded-lg text-white shadow-2xl transform hover:scale-105 transition-all duration-300 hover:bg-opacity-100 cursor-pointer"
+                className="bg-red-600 bg-opacity-95 backdrop-blur-sm p-6 rounded-lg text-white transform hover:scale-105 transition-all duration-300 hover:bg-opacity-100 cursor-pointer"
               >
                 {/* Profile Image */}
                 <div className="relative w-full h-36 lg:h-60 mb-4 overflow-hidden rounded-lg">

@@ -11,6 +11,9 @@ const Header: React.FC = () => {
         <Image src="/Logo.svg" alt="logo" width={90} height={40} />
 
         </Link>
+        <div className='mr-25'>
+        <Image src="/SVG/logo2.svg" alt='logo' width={50} height={50}/>
+        </div>
         <Navbar />
       </div>
     </header>

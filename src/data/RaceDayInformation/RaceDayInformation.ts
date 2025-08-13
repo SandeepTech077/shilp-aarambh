@@ -446,15 +446,18 @@ export const RoutesMapData = {
   links: [
     {
       label: "ROUTE MAP 21.0975 KM HALF MARATHON",
-      url: "#half-marathon-map",
+      url: "#half-marathon-map",  
+      image: Helper.routemap1,
     },
     {
       label: "ROUTE MAP 10 KM VIJAY DIWAS RUN",
       url: "#vijay-diwas-map",
+      image: Helper.routemap2,
     },
     {
       label: "ROUTE MAP 5 KM FUN RUN",
       url: "#fun-run-map",
+      image: Helper.routemap3,
     },
   ],
 };
